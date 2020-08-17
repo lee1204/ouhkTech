@@ -15,6 +15,13 @@ body { padding-top: 70px; }
     border-radius: 10px;
 }
 
+div.fixed {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+  }
+
 img{
     max-width: 100%;
 }
@@ -27,11 +34,15 @@ img{
 }
 
 #navbar li{
-    padding: 0px 10px;
+    padding: 0px 5px;
 }
 
 #navbar{
     padding-left: 10vh;
+}
+
+#navbar .navtitle{
+    padding-top: 10px;
 }
 
 #slideshow .jumbotron{
@@ -117,15 +128,39 @@ footer ul li{
     
 }
 
-footer ul li a{
-    color: #f05f5c;
+a{
+    color: green;
 }
+/* unvisited link 
+a:link {
+    color: green;
+  }*/
+  
+  /* visited link 
+  a:visited {
+    color: blue;
+  }*/
+  
+  /* mouse over link */
+  a:hover {
+    color: lightgreen;
+  }
+  
+  /* selected link 
+  a:active {
+    color: red;
+  }*/
 
 @media only screen and (max-width: 768px) {
 
     body{
         padding-left: 0px;
-        margin-top: 100px;
+        padding-top: 90px;
+    }
+
+    #slideshow .jumbotron{
+        padding-bottom: 10px;
+        padding-top: 40px;
     }
 
     #latest .outer{
@@ -145,31 +180,13 @@ footer ul li a{
         margin-top: 40px;
     }
 
+    #navbar{
+        padding-left: 10px;
+    }
+
 }
 
-/*Academic Staff
-#staff{
-    font-size: 42px;
-    font-weight: 400;
-    line-height: 1.5;
-    padding-top: 70px;
-}
-
-#staff .container{
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.carousel-caption {
-    position: relative;
-    left: auto;
-    right: auto;
-}*/
-
-#staff, #news{
+#staff, #news, #full-time{
     padding: 80px 0px;
     background: rgb(248, 248, 248);
 }
@@ -237,4 +254,9 @@ footer ul li a{
 
 #news .row{
     margin: 10px 0px;
+}
+
+#second li, #full-time li{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
