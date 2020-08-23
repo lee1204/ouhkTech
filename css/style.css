@@ -1,19 +1,41 @@
 h1, h2, h3, h4, h5, h6{
     font-family: 'Noto Sans', sans-serif;
+    padding: 5px 5px;
 }
 
 p, a, input, label, textarea, span, ul, li{
     font-family: 'Open Sans', sans-serif;
+    padding: 5px 5px;
 }
 
-body { padding-top: 70px; }
+body { padding-top: 150px; background: rgb(248, 248, 248);}
 
-.btn{
+/*#staff, #news, #full-time{
+    padding: 80px 0px;
+    background: rgb(248, 248, 248);
+}*/
+
+.title h3{
+    margin-bottom: 40px;
+    font-weight: bolder;
+}
+
+/*.btn{
     background: #f05f5c;
     color: white;
     padding: 9px 26px;
     border-radius: 10px;
 }
+
+<ul>
+                                <a href="https://computing.ouhk.edu.hk/web/programme/BCOMPHITJ/Overview"><li>Bachelor of Computing with Honours in Internet Technology (JSSU71)</li></a>
+                                <a href="https://computing.ouhk.edu.hk/web/programme/BSCHCS/Overview"><li>Bachelor of Science with Honours in Computer Science [NEW] (JS9718)</li></a>
+                                <a href="https://computing.ouhk.edu.hk/web/programme/BAHCIE/Overview"><li>Bachelor of Arts with Honours in Computing and Interactive Entertainment (BAHCIEFS)</li></a>
+                                <a href="http://sct.ouhk.edu.hk/engsc/fulltime-studies/benghecej1/"><li>Bachelor of Engineering with Honours in Electronic and Computer Engineering (JS9720)</li></a>
+                                <a href="http://sct.ouhk.edu.hk/engsc/fulltime-studies/bschcef3/"><li>Bachelor of Science with Honours in Computer Engineering (BSCHCEF3)</li></a>
+                                <a href="http://sct.ouhk.edu.hk/engsc/fulltime-studies/bschccs/"><li>Bachelor of Science with Honours in Cyber and Computer Security (BSCHCCSJS)</li></a>
+                                <a href="http://bscsads.ouhk.edu.hk/index.html"><li>Bachelor of Science with Honours in Data Science and Artificial Intelligence [NEW] (JS9780)</li></a>
+                            </ul>*/
 
 div.fixed {
     position: fixed;
@@ -33,9 +55,9 @@ img{
     margin-right: auto;
 }
 
-#navbar li{
+/*#navbar li{
     padding: 0px 5px;
-}
+}*/
 
 #navbar{
     padding-left: 10vh;
@@ -104,12 +126,17 @@ header li{
 }
 
 footer{
-    padding: 40px 0px;
+    padding: 20px 0px;
+    background-color: white;
 }
 
-footer img{
+/*footer img{
     width: 200px;
     margin-bottom: 15px;
+}*/
+
+footer ul, footer li, footer p, footer address{
+    font-size: 0.8em;
 }
 
 footer a{
@@ -121,11 +148,6 @@ footer ul{
     padding: 0;
     margin-right: 20px;
     float: left;
-}
-
-footer ul li{
-    margin-bottom: 5px;
-    
 }
 
 a{
@@ -155,12 +177,14 @@ a:link {
 
     body{
         padding-left: 0px;
-        padding-top: 90px;
+        padding-top: 130px;
     }
 
     #slideshow .jumbotron{
         padding-bottom: 10px;
-        padding-top: 40px;
+        padding-top: 40px;#staff .lower i{
+    margin-right: 6px;
+}
     }
 
     #latest .outer{
@@ -171,12 +195,12 @@ a:link {
         width: 100%;
     }
 
-    footer h4{
+    footer h6{
         margin-bottom: 26px;
         margin-top: 35px;
     }
 
-    #staff h3{
+    .title h3{
         margin-top: 40px;
     }
 
@@ -184,15 +208,10 @@ a:link {
         padding-left: 10px;
     }
 
-}
+    #graduates .row{
+        margin: 0px 30px;
+    }
 
-#staff, #news, #full-time{
-    padding: 80px 0px;
-    background: rgb(248, 248, 248);
-}
-
-#staff h3, #news h3{
-    margin-bottom: 40px;
 }
 
 #staff .upper{
@@ -210,7 +229,7 @@ a:link {
     border-radius: 20px;
 }
 
-#staff .innertext h4{
+/*#staff .innertext h4{
     font-size: 22px;
     margin-top: 18px;
 }
@@ -241,22 +260,111 @@ a:link {
 
 #staff a{
     color: black;
-}
+}*/
 
 #staff a:hover{
     text-decoration: none;
 }
 
-#news h6{
+#full-time h5{
+    padding: 10px 0px;
+    color: green;
+    font-weight: bold;
+    font-family: arial,helvetica,sans-serif;
+}
+
+#full-time td{
+    padding: 5px;
+}
+
+#full-time p{
+    font-size: 0.9em;
+}
+
+#full-time a img{
+    padding: 20px 0px;
+}
+
+#full-time .btn{
+    font-size: 0.85em;
+    background-color: darkgreen;
+    color: aliceblue;
+    font-weight: 900;
+}
+
+#full-time .programmename{
+    font-weight: bold;
+    color: darkgreen;
+}
+
+#news h6, .modal-body h6{
     color: grey;
-    
+    font-size: 15px;
+}
+
+#news p{
+    font-size: 15px;
 }
 
 #news .row{
     margin: 10px 0px;
 }
 
-#second li, #full-time li{
+#second li{
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+ 
+.card{
+    border-radius: 15px;
+}
+
+.card-img-top{
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.lower{
+    padding: 10px;
+}
+
+#graduates .lower h3{
+    font-size: 24px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+#graduates .lower i{
+    margin-right: 6px;
+}
+
+#graduates .card{
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2);
+    min-height: 360px;
+}
+
+.modal-body{
+    padding-top: 0px;
+}
+
+.closemodal button{
+    padding: 5px 10px;
+}
+
+.modal img{
+    padding-bottom: 5px;
+    max-width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+#graduates .col-md-3, #graduates .col-sm-6, #graduates .btn{
+    padding: 5px;
+}
+
+.position{
+    background: wheat;
+    border-radius: 20px;
 }
