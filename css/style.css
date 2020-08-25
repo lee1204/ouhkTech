@@ -12,7 +12,7 @@ p, input, label, textarea, span, ul, li{
     padding: 5px 5px;
 }
 
-body { padding-top: 170px; background: rgb(248, 248, 248);}
+body { padding-top: 150px; background: rgb(248, 248, 248);}
 
 td[rowspan], th[rowspan]{
     vertical-align: middle;
@@ -67,6 +67,7 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
 }
 
 /*#navbar li{
@@ -197,19 +198,25 @@ a:link {
   }*/
 @media (min-width: 769px) and (max-width: 992px){
     body{
-        padding-top: 100px;
+        padding-top: 80px;
     }
 }
 
 @media only screen and (max-width: 768px) {
 
     body{
-        padding-top: 160px;
+        padding-top: 140px;
     }
 
     #slideshow .jumbotron{
-        padding-bottom: 10px;
-        padding-top: 40px;
+        padding: 10px;
+    }
+
+    #slideshow img{
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #latest .outer{
