@@ -236,7 +236,7 @@ a:link {
 
 }
 .staffname, .staffqual, .staffpo, .stafftel, .staffmail{
-    padding: 5px;
+    padding: 5px 0px;
 }
 
 .staffpo{
