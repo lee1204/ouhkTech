@@ -235,6 +235,24 @@ a:link {
     }
 
 }
+.staffname, .staffqual, .staffpo, .stafftel, .staffmail{
+    padding: 5px;
+}
+
+.staffpo{
+    font-weight: 500;
+}
+
+.staffqual, .stafftel, .staffmail{
+    font-size:13px; 
+    font-weight: normal
+}
+
+.staffname{
+    font-family: 'Arial', 'Helvetica', 'sans-serif'; 
+    text-decoration:none; 
+    font-size: 21px;
+}
 
 #staff .upper{
     position: relative;
