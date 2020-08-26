@@ -313,7 +313,7 @@ a:link {
     text-decoration: none;
 }
 
-#full-time h5{
+#full-time h5, #full-time .programmename{
     padding: 10px 0px;
     color: green;
     font-weight: bold;
@@ -342,9 +342,10 @@ a:link {
     color: aliceblue;
     font-weight: 900;
     margin: 1px;
+    border-radius: 5px;
 }
 
-#full-time .btn-group-vertical a{
+/*#full-time .btn-group-vertical a{
     max-width: 100%;
     display: block;
     margin-left: auto;
@@ -354,7 +355,7 @@ a:link {
 #full-time .programmename{
     font-weight: bold;
     color: darkgreen;
-}
+}*/
 
 #newsbody h6, #achievementsbody h6{
     color: grey;
@@ -385,6 +386,10 @@ a:link {
 }
 
 #news .col-md-6{
+    padding: 0px;
+}
+
+#news .card span{
     padding: 0px;
 }
 
