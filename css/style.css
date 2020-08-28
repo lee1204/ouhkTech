@@ -389,12 +389,17 @@ a:link {
     padding: 0px;
 }
 
+#newsSideBar a{
+    text-shadow: 0px 1px green;
+}
+
 #news .card span{
     padding: 0px;
 }
 
 #news .card{
-    padding: 2px;
+    padding: 5px;
+    background-color: honeydew;
 }
 
 #news ul{

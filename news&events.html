@@ -22,6 +22,9 @@
         $(function(){
             $("#footer").load("footer.html");
         });
+        $(function(){
+            $("#newsSideBar").load("newsSideBar.html");
+        });
     </script>
     
     <body>
@@ -39,91 +42,19 @@
                     
                     <section id="newsbody" style="margin-top: -20px;">
                         <div class="row">
-                            <div class="col-md-3">
-                                <div class="accordion" id="accordionExample">
-                                    <div class="card">
-                                      <div class="card-header" id="headingOne">
-                                        <h2 class="mb-0">
-                                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <span>Student Activities</span>
-                                          </button>
-                                        </h2>
-                                      </div>
-                                  
-                                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <ul>
-                                                <li><a href="#200709">Institutional Review from HKCAAVQ</a></li>
-                                                <li><a href="#200602">FYP Cooperate with Hong Kong Red Cross</a></li>
-                                                <li><a href="#200511">New Programme in Cyber and Computer Security</a></li>
-                                            </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="card">
-                                      <div class="card-header" id="headingTwo">
-                                        <h2 class="mb-0">
-                                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            <span>Workshops and Seminars</span>
-                                          </button>
-                                        </h2>
-                                      </div>
-                                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <ul>
-                                                <li><a href="#200416">SetSail 2020</a></li>
-                                                <li><a href="#190625">Presentation at the International Conference EcoSta2019</a></li>
-                                                <li><a href="#190525">Alumni Experience Sharing 2019</a></li>
-                                                <li><a href="#190301">Career Education & CV Workshop 2019</a></li>
-                                                <li><a href="#19"></a></li>
-                                            </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="card">
-                                      <div class="card-header" id="headingThree">
-                                        <h2 class="mb-0">
-                                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            <span>Technical Visits</span>
-                                          </button>
-                                        </h2>
-                                      </div>
-                                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <ul>
-                                                <li><a href="#191031">Company Visit to Green Tomato Limited</a></li>
-                                            </ul>
-                                        </div>
-                                      </div>
-                                      
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="studyTour">
-                                          <h2 class="mb-0">
-                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#studyTour" aria-expanded="false" aria-controls="collapseThree">
-                                              <span>Study Tour</span>
-                                            </button>
-                                          </h2>
-                                        </div>
-                                        <div id="studyTour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                          <div class="card-body">
-                                              <ul>
-                                              </ul>
-                                          </div>
-                                        </div>
-                                        
-                                      </div>
-
-                                </div>
+                            <div class="col-md-3" id="newsSideBar">
+                                
                             </div>
+
                             <div class="col-md-9" style="margin-top: -70px;">
                                 <br>
+
                                 <span id="200709" class="anchor">&nbsp;</span>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="row">
-                                            <img class="col-md-6" src="pictures/news/200709InstitutionalReview.png"><img class="col-md-6" src="pictures/news/200709InstitutionalReview2.png">
-                                        <div>
+                                            <div class="row"><img class="col-md-6" src="pictures/news/200709InstitutionalReview.png"><img class="col-md-6" src="pictures/news/200709InstitutionalReview2.png"></div>
+                                            <div>
                                                 <h5>Institutional Review from Hong Kong Council for Accreditation of Academic and Vocational Qualifications</h5>
                                                 <h6>9 Jul 2020</h6>
                                                 <p>Today, the representatives from Hong Kong Council for Accreditation of Academic and Vocational Qualifications (HKCAAVQ) review the courses offered by the Computing Programmes Team to ensure the quality of our programme (Bachelor of Computing with Honours in Internet Technology). Several graduates and undergraduate students of computing programmes were also invited to attend the meeting at Council Chamber at OUHK (Homantin Main campus). Thanks to graduates and students for taking the time to attend and providing comments about our programme to the reviewers.</p>
@@ -136,7 +67,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="row">
-                                            <img class="col-md-6" src="pictures/news/200602redcrossfyp2.png"><img class="col-md-6" src="pictures/news/200602redcrossfyp.png">
+                                            <div class="row"><img class="col-md-6" src="pictures/news/200602redcrossfyp2.png"><img class="col-md-6" src="pictures/news/200602redcrossfyp.png"></div>
                                             <div>
                                                 <h5>The First VR Game about Blood Donation in Hong Kong - Cooperate with Hong Kong Red Cross</h5>
                                                 <h6>2 Jun 2020</h6>
@@ -147,82 +78,84 @@
                                     </div>
                                 </div>
 
-                                <span id="200511" class="anchor">&nbsp;</span>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="pictures/news/200511bschccsjs-square.jpg">
-                                        <div>
-                                            <h5>New Programme in Cyber and Computer Security</h5>
-                                            <h6>11 May 2020</h6>
-                                            <p>B.Sc. (Hons) in Cyber and Computer Security is a two-year programme for holders of related Higher Diploma or Associate Degree. The programme covers specialized topics in cyber security, digital forensics, Internet of Things (IoT), blockchain, cloud computing, and AI. For more details, please click <a href="pictures/news/200511bschccsjs-flyer.pdf">here</a>.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <span id="200416" class="anchor">&nbsp;</span>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="pictures/news/200416setsail.png">
-                                        <div>
-                                            <h5>SetSail 2020: Computer and Engineering Career Video-Conference</h5>
-                                            <h6>16 Apr 2020</h6>
-                                            <p>SetSail 2020: Computer and Engineering Career Video-Conference「啟航：電腦及工程科就業網上視像研討會」was held on 16-Apr-2020 Thursday 1400 - 1600.
-
-                                                Four renowned companies, namely Kinetix, ICO, Mobigator Technology Group, and Green Tomato, were invited. For details of the companies, please visit the conference website: <a href="https://computing.ouhk.edu.hk/web/setsail/Home">https://computing.ouhk.edu.hk/web/setsail/Home</a>. 
-                                                </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <span id="191031" class="anchor">&nbsp;</span>
+                                <span id="191018" class="anchor">&nbsp;</span>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="row">
-                                            <img class="col-md-6" src="pictures/news/191031greentomato.png"><img class="col-md-6" src="pictures/news/191031greentomato2.png">
-                                        <div>
-                                                <h5>Company Visit to Green Tomato Limited</h5>
-                                                <h6>31 Oct 2019</h6>
-                                                <p>A group of computing students visited Green Tomato Limited in Kwun Tong. Green Tomato is an award winning company with a number of famous products such as Hong Kong Movie and Timable.
-                                                    The staff introduced the facilities and workplace of the company. They also shared the latest developments in the IT industry and tips on how to enter the industry, and answered students' questions. Students learnt more details about the operations and management of project workflow, which is very helpful to the students' career planning.</p>
+                                            <img class="newsbanner" src="pictures/news/191018hackathon.png">
+                                            <div>
+                                                <h5>Classified Post Hackathon 2019</h5>
+                                                <h6>18-19 Oct 2019</h6>
+                                                <p>Three teams of computing students participated in Classified Post Hackathon held by South-China Morning Post. Classified Post Hackathon is a 24 hours challenge for students and fresh graduates to build winning digital solutions for large corporates. The event is for participants to turn ideas into reality and will serve as a platform for them to develop their prototype, enhance their problem solving skills and to learn and meet with technology industry leaders.</p>
+                                                <p>Date: 18 – 19 October 2019<br>
+                                                    (Contest briefing was held on 12 October 2019 at HKPC Building)</p>
                                                     
-                                                    <p>If you want to know more details about the company, please visit: <a href="http://www.greentomato.net/">http://www.greentomato.net/</a>.</p>
+                                                <p>Venue: Hong Kong Science Park<br>
+                                                    Opening and Brainstorming session: Exhibition Hall
+                                                    </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <span id="190625" class="anchor">&nbsp;</span>
+                                <span id="191010" class="anchor">&nbsp;</span>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <img class="newsbanner" src="pictures/news/CFE_conference_2019.png">
-                                        <div>
-                                            <h5>Presentation at the International Conference EcoSta2019</h5>
-                                            <h6>25 Jun 2019</h6>
-                                            <p>Cheng Ting Hin, Li Ka Lok, Wong Chun Lam, Lau Suet Ying and Ng Chak Long presented their final year project work 'Identification of pairs trading opportunities using copula-based conditional probabilities and machine learning models' in the International Conference on Econometrics and Statistics (EcoSta2019) in Taiwan on 25-27 June 2019. Apart from presenting their work, they also attended several researchers' presentations. It is a memorable event for all the team members.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <span id="190525" class="anchor">&nbsp;</span>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img class="newsbanner" src="pictures/news/Alumni_sharing_2019.png">
+                                        <img src="pictures/news/191010PeerTutor.png">
                                         <div>   
-                                            <h5>Alumni Experience Sharing 2019</h5>
-                                            <h6>25 May 2019</h6>
-                                            <p>The 2019 alumni sharing activity was held at 25 May 2019 (Sat). We addressed the job characteristics/requirements of the following positions: 1) Research Assistant in PolyU; 2) Analyst in a Logistic firm; 3)Business Analyst in Bank of China; 4) Machine Leaning developer in the Science Park; 5) Statical Officer in the Census & Statistics Department. And, we have covered over 20 important interview questions, 10 written questions and shared a few websites for self-learning in machine learning knowledge.</p>
+                                            <h5>Peer Tutor Scheme</h5>
+                                            <h6>10 Oct 2019</h6>
+                                            <p>We are pleased to announce that the following students that have been appointed Peer Tutors for the academic year 2019/2020:</p>
+                                            <p>Mr. LOH Ka Hong, Max 陸嘉康 (BCOMPHITJ-SU71 Year 4)<br>
+                                                Mr. TSOI Sai Wing, Stephen 蔡世荣 (BCOMPHITJ-SU71 Year 4)<br>
+                                                Mr. LEE Chi Hon, Robin 李志洭 (BCOMPHITJ-SU71 Year 4)<br>
+                                                Mr. LI Bangjie, Jacky 黎邦杰 (BCOMPHITJ-SU71 Year 3)<br>
+                                                Mr. WONG Wing Shing 黃永誠 (BCOMPHITJ-SU71 Year 3)<br>
+                                                Ms. CHAN Ka Yan, Fire 陳嘉欣 (BCOMPHITJ-SU71 Year 4)<br>
+                                                Mr. LO Yiu Nam, Flow 羅耀男 (BCOMPHITJ-SU71 Year 3)<br></p>
+                                            <p>The Peer Tutoring Scheme has been established in the Computing Programmes Team since 2008/09. The computing programme offers 6 to 8 positions of Peer Tutors every year to final year students in BCOMPHITJ.  Peer Tutors are honourable appointments and receive an hourly part-time job rate as Student Trainee.</p>
+                                            <p>Peer tutors are student leaders who are responsible for assisting the instruction work in the computing programme team.  In most cases, they will be involved in classroom teaching and consultation under the supervision of an instructor.  Sometimes they will be assigned to other duties such as clerical work and event helpers.   They are regarded as part of the teaching team of OUHK Computing.   The appointees will gain valuable experience at tertiary level instruction.</p>
+                                            <p>The past peer tutors developed strong leadership through the programme which is helpful to their career.  You can read more about the programme here: <a href="https://computing.ouhk.edu.hk/web/student/PeerTutors">computing.ouhk.edu.hk/web/student/PeerTutors</a></p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <span id="190301" class="anchor">&nbsp;</span>
+                                <span id="190923" class="anchor">&nbsp;</span>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <img class="newsbanner" src="pictures/news/CV_2019.png">
-                                        <div>
-                                            <h5>Career Education & CV Workshop 2019</h5>
-                                            <h6>1 Mar 2019</h6>
-                                            <p>Thanks for the support form SAO, we have a special CV workshop session tailored for our Statistical Analysis & Data Science students on Mar 2019.</p>
+                                        <img class="newsbanner" src="pictures/news/190923InnoAward.png">
+                                        <div>   
+                                            <h5>Two Projects Receive HK$200,000 Funding from Open InnoChallenge (OIC) Sponsorship</h5>
+                                            <h6>23 Sep 2019</h6>
+                                            <p>Open InnoChallenge (OIC) is a brand-new endeavor launched in 2017 organized by Student Affairs Office (SAO) aiming to unleash students’ creativity and innovation, and enhance students’ entrepreneurial skills to translate the innovative ideas “into viable operation” for profit or for social good. It strives to inspire students’ innovation via “Experience” and “Empower” in the way of out-of-the-classroom learning. It encourages students to develop a feasible proposal for a startup enterprise with funding of $100,000.</p>
+                                            <p>This year, two teams of computing graduates have successfully obtained a start-up fund of HK$100,000 for their awarded projects, Banana Portal and Fruit Peel Family, in order to carry out their business plan. The Open InnoCelebration was also held on 21 September 2019, an Awards Presentation Ceremony cum Exhibition of Open InnoChallenge which OU students and alumni demonstrate their innovative projects. Apart from creative exhibition booths, OU students will also host a series of interactive workshops to promote environmental protection and emotional health.</p>
+                                            <p>Website: <a href="www.ouhk.edu.hk/sao/oic">www.ouhk.edu.hk/sao/oic</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <span id="190627" class="anchor">&nbsp;</span>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img class="newsbanner" src="pictures/news/190627Outstandingstudentsaward.png">
+                                        <div>   
+                                            <h5>Outstanding Student Awards cum Dean’s List Presentation Ceremony</h5>
+                                            <h6>27 Jun 2019</h6>
+                                            <p>Outstanding Student Awards cum Dean’s List Presentation Ceremony for School of Science & Technology was held on 27th June 2019. Students of our computing programme team had outstanding performance in their respective courses and were granted “Outstanding Student Award”.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <span id="1906272" class="anchor">&nbsp;</span>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row"><img class="col-md-6" src="pictures/news/190627ChineseInternship.png"><img class="col-md-6" src="pictures/news/190627ChineseInternship2.png"></div>
+                                        <div>   
+                                            <h5>Two Students Participated in the Youth Internship Programme at the Chinese Academy of Sciences</h5>
+                                            <h6>27 Jun 2019</h6>
+                                            <p>In the middle of June, two students from the computing programme were admitted to the Youth Internship Programme at the Chinese Academy of Sciences (CAS) for six weeks, conducting science and technology research such as artificial intelligence, intelligent robots, and autonomous systems in the Institute of Automation.</p>
+                                            <p>The programme is organised by the Home Affairs Bureau and co-organised by the academy and the Hong Kong Volunteers Association. Under the six-week internship, 49 tertiary students from Hong Kong have been assigned to research units under the academy in areas such as artificial intelligence, intelligent robots, autonomous vehicles, mathematics, physics and life sciences. A number of research units including the Institute of Automation, the Institute of Computing Technology, the Institute of Software, the Institute of Mathematics, the Institute of Physics and the Institute of Microbiology are involved. </p>
+                                            <p>Vice President Professor Kwan Ching Ping Reggie was also invited to attend the opening ceremony of the Youth Internship Programme at the Chinese Academy of Sciences.</p>
                                         </div>
                                     </div>
                                 </div>
