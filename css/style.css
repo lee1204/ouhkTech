@@ -25,31 +25,10 @@ td[rowspan], th[rowspan]{
     margin-top:-100px;
  }
 
-/*#staff, #news, #full-time{
-    padding: 80px 0px;
-    background: rgb(248, 248, 248);
-}*/
-
 .title h3{
     font-weight: bolder;
     padding: 40px;
 }
-
-/*.btn{
-    background: #f05f5c;
-    color: white;
-    padding: 9px 26px;
-    border-radius: 10px;
-}
-
-<ul>
-                                <a href="https://computing.ouhk.edu.hk/web/programme/BSCHCS/Overview"><li>Bachelor of Science with Honours in Computer Science [NEW] (JS9718)</li></a>
-                                <a href="https://computing.ouhk.edu.hk/web/programme/BAHCIE/Overview"><li>Bachelor of Arts with Honours in Computing and Interactive Entertainment (BAHCIEFS)</li></a>
-                                <a href="http://sct.ouhk.edu.hk/engsc/fulltime-studies/benghecej1/"><li>Bachelor of Engineering with Honours in Electronic and Computer Engineering (JS9720)</li></a>
-                                <a href="http://sct.ouhk.edu.hk/engsc/fulltime-studies/bschcef3/"><li>Bachelor of Science with Honours in Computer Engineering (BSCHCEF3)</li></a>
-                                <a href="http://sct.ouhk.edu.hk/engsc/fulltime-studies/bschccs/"><li>Bachelor of Science with Honours in Cyber and Computer Security (BSCHCCSJS)</li></a>
-                                <a href="http://bscsads.ouhk.edu.hk/index.html"><li>Bachelor of Science with Honours in Data Science and Artificial Intelligence [NEW] (JS9780)</li></a>
-                            </ul>*/
 
 div.fixed {
     position: fixed;
@@ -69,10 +48,6 @@ img{
     margin-right: auto;
     border-radius: 5px;
 }
-
-/*#navbar li{
-    padding: 0px 5px;
-}*/
 
 #navbar{
     padding-left: 10vh;
@@ -154,11 +129,6 @@ footer{
     background-color: white;
 }
 
-/*footer img{
-    width: 200px;
-    margin-bottom: 15px;
-}*/
-
 footer ul, footer li, footer p, footer address{
     font-size: 0.8em;
 }
@@ -177,25 +147,11 @@ footer ul{
 a{
     color: green;
 }
-/* unvisited link 
-a:link {
-    color: green;
-  }*/
-  
-  /* visited link 
-  a:visited {
-    color: blue;
-  }*/
-  
-  /* mouse over link */
+
   a:hover {
     color: lightgreen;
   }
-  
-  /* selected link 
-  a:active {
-    color: red;
-  }*/
+
   @media screen and (min-width: 992px) {
 
     .newssingle{
@@ -214,12 +170,20 @@ a:link {
     #slideshow img{
         max-width: 100%;
     }
+
+    header ul, li{
+        padding: 0px 5px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
 
     body{
         padding-top: 140px;
+    }
+
+    header ul, li{
+        padding: 0px 5px;
     }
 
     #slideshow .jumbotron{
@@ -286,39 +250,6 @@ a:link {
     border-radius: 20px;
 }
 
-/*#staff .innertext h4{
-    font-size: 22px;
-    margin-top: 18px;
-}
-
-.outer{
-    border-radius: 15px;
-    min-height: 750px;
-}
-
-.lower{
-    padding: 10px;
-}
-
-#staff .lower h3{
-    font-size: 24px;
-    margin-bottom: 12px;
-    margin-top: 12px;
-}
-
-#staff .lower i{
-    margin-right: 6px;
-}
-
-#staff .outer{
-    background: white;
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
-}
-
-#staff a{
-    color: black;
-}*/
-
 #staff a:hover{
     text-decoration: none;
 }
@@ -355,18 +286,6 @@ a:link {
     border-radius: 5px;
 }
 
-/*#full-time .btn-group-vertical a{
-    max-width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#full-time .programmename{
-    font-weight: bold;
-    color: darkgreen;
-}*/
-
 #newsbody h6, #achievementsbody h6{
     color: grey;
     font-size: 15px;
@@ -399,10 +318,6 @@ a:link {
     padding: 0px;
 }
 
-#newsSideBar a{
-    
-}
-
 #news .card span{
     padding: 0px;
 }
@@ -425,13 +340,6 @@ a:link {
     color: royalblue;
     font-size: 1.1em;
 }
-
-/*#news img{
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}*/
 
 #news .newsbanner{
     width: 100%;
@@ -492,7 +400,19 @@ a:link {
     padding: .75em 1em;
     color: rgba(0, 0, 0, .4);
     border-top: 1px solid rgba(0, 0, 0, .05) !important;
-    background: snow;
+    background: border-box;
+}
+
+#graduates .card{
+    position: relative;
+}
+
+.graduatecard-footer {
+    position: absolute;
+    right: 15;
+    bottom: 15;
+    color: rgba(0, 0, 0, .4);
+    background: border-box;
 }
 
 .card .position, .modal-body h6{
