@@ -196,6 +196,16 @@ a:link {
   a:active {
     color: red;
   }*/
+  @media screen and (min-width: 992px) {
+
+    .newssingle{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+
 @media (min-width: 769px) and (max-width: 992px){
     body{
         padding-top: 80px;
@@ -390,7 +400,7 @@ a:link {
 }
 
 #newsSideBar a{
-    text-shadow: 0px 1px green;
+    
 }
 
 #news .card span{
@@ -416,12 +426,12 @@ a:link {
     font-size: 1.1em;
 }
 
-#news img{
-    width: 500px;
+/*#news img{
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+}*/
 
 #news .newsbanner{
     width: 100%;
